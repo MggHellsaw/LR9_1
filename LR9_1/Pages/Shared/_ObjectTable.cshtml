@@ -1,0 +1,21 @@
+﻿@model List<LR9_1.Models.ObjectModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td>@obj.ID</td>
+                <td>@obj.Name</td>
+                <td>@obj.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
